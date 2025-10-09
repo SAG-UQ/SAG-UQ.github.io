@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="SAG UQ">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Uncertainty Quantification, Netherlands, NDNS+, Special Activity Group">
+      <!-- This is supposed to speed up loading pushed changes in live website -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+	 <meta http-equiv='expires' content='0'> 
+	 <meta http-equiv='pragma' content='no-cache'>
+    <title> Special Activity Group Uncertainty Quantification </title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Banner">
+        <div class="top-left">
+            <span class="title2">Special Activity Group on Uncertainty Quantification </span> 
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a class="current" title="Events" href="events">Events</a>
+            </td>
+            <td class="navigation">
+                <a title="contact" href="contact">Contact</a> 
+            </td>
+        </tr>
+    </table>
+
+	<h2> Kickoff event </h2>
+	<p>We are excited to announce the kickoff event of our SAG-UQ.</p>
+
+	<ul>
+	<li> When? Monday, January 26, 2026.</li>
+	<li> Where? VU Amsterdam.</li>
+	<li> Registration? TBD</li>
+	<li> Including kickoff dinner: 75 euros (lunch and coffee breaks included)</li>
+	<li> Without kickoff dinner: 25 euros (lunch and coffee breaks included)</li>
+	<li> Registration deadline: January 4th, 2026</li>
+	</ul>
+
+	<h3>Keynote speakers</h3>
+
+	<ul>
+	<li> Lorenzo Tamellini (CNR-IMATI Pavia, head of GAMM activity group on Uncertainty Quantification) </li>
+	<li> Auke van der Ploeg (MARIN (CFD))</li>
+	<li> Bojana Rosic (University of Twente)</li>
+	<li> TBC</li> 
+	</ul>
+
+</body>
+</html>
