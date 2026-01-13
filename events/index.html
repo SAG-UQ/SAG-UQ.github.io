@@ -54,18 +54,143 @@
 	<li> Registration deadline: January 4th, 2026</li>
 	</ul>
 
-	<p>
-	<h4>Keynote speakers</h4>
+    <h4> Program </h4>   
+    <img src="assets/KO_schedule.png" alt="kickoff event schedule">
 
+	<h4>Keynote speakers and abstracts</h4>
+
+	<!--
 	<ul>
 	<li> Lorenzo Tamellini (CNR-IMATI Pavia, head of GAMM activity group on Uncertainty Quantification) </li>
-	<li> Auke van der Ploeg (MARIN (CFD))</li>
+	<li> Auke van der Ploeg (MARIN (CFD)</li>
 	<li> Bojana Rosic (University of Twente)</li>
 	<li> Frank van der Meulen (VU Amsterdam)</li> 
 	</ul>
 	</p>
-		
-<iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.021460688447!2d4.863139612135302!3d52.33375677189624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a085c443af1%3A0x2df2d7a997eccd84!2sVrije%20Universiteit%20Amsterdam!5e0!3m2!1snl!2snl!4v1760013236344!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	-->
+
+    <table class="plenary">
+ 
+
+        <tr>
+            <td class="date" rowspan="3">
+                10:00
+            </td>
+            <td class="title">
+					Dealing with noisy evaluations and gradient-enrichment in collocation methods for surrogate modeling of parametric PDEs
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://sites.google.com/view/lorenzo-tamellini/home-page"> Lorenzo Tamellini </a> (CNR-IMATI Pavia), head of <a href="https://gamm-ag-uq.github.io/">GAMM activity group on Uncertainty Quantification </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+            <p>
+				In this talk I will present two recent works aimed at
+				enhancing/robustifying the construction of surrogate models for
+				parametric PDEs with single/multi-fidelity collocation methods, namely
+				Sparse Grids Stochastic Collocation and Multi-Index Stochastic
+				Collocation methods (SGSC / MISC, respectively).</p>
+
+				<p>The first work concerns robustyfing the surrogate model construction
+				with respect to the presence of noise in PDE solvers. In practical
+				scenarios, in addition to "standard" discretization errors, the PDE
+				approximations are often corrupted by e.g. iterative method tolerances,
+				pre-asymptotic meshes, etc. The intensity of this corruption might be
+				different in different regiones of the parameter domain and hard to
+				estimate and control a priori (i.e., akin to a "noise", even though not
+				aleatoric in nature): SGSC and MISC will end up interpolating such
+				noise, resulting in a spoiled approximation of the response surface
+				(loss of monotonicity, spurious high-frequency oscillations),
+				compromising any subsequent analysis (optimization, real-time query,
+				uncertainty quantification). We propose a strategy to detect and prevent
+				such spoiling, based on inspecting the spectral content of the response
+				surface approximation: once the decay of the spectral coefficients
+				stagnates due to noisy evaluations, the construction will either stop
+				(in the single-fidelity scenario) or exclude the corrupted fidelities
+				from that iteration on (in a multi-fidelity scenario).</p>
+
+				<p>The second work discusses how to incorporate evaluations of gradients of
+				the response function in the construction of SGSC surrogate models. This
+				poses several challenges from a theoretical standpoint, such that
+				eventually it is easier to resort to a least-squares approach where both
+				the samples of the parameter domain and the polynomial space are
+				dictated by a sparse grid construction.
+				We will in particular elaborate on the fact that gradient-enhancement
+				turns out to be not always a convenient operation, depending on a) the
+				relative cost between evaluating the response function and its gradient
+				and b) the expected accuracy of these evaluations.</p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="date" rowspan="3">
+                11:15
+            </td>
+            <td class="title">
+					From statistics to data assimilation: bridging guiding and nudging
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://fmeulen.github.io/"> Frank van der Meulen </a> (VU Amsterdam)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+				Ordinary and partial differential equations underpin many physical, chemical, biological, and climate models. In practice, these systems are observed only partially and at discrete time points, making it necessary to reconstruct the full state over time-a task known as filtering (for real-time estimation) and smoothing (for retrospective estimation). In this talk I will highlight the parallel development of similar ideas-often called "guiding" in statistics and "nudging" in data assimilation- across the statistics and data-assimilation communities, despite limited cross-communication.  I will also illustrate guiding applied to neural field models and outline several open challenges that merit further research.
+            </td>
+        </tr>
+
+        <tr>
+            <td class="date" rowspan="3">
+                14:00
+            </td>
+            <td class="title">
+					Numerical uncertainty in CFD simulations involving overset grids or interfaces for maritime applications
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://www.marin.nl/en/experts/auke-van-der-ploeg"> Auke van der Ploeg </a> (MARIN (CFD)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+            <p>This presentation focuses on numerical uncertainty caused by mesh dependence and iterative errors in Computational Fluid Dynamics (CFD) simulations that use overset grids or interfaces for maritime applications.</p>
+            <p>Overset grids allow strong flexibility when computing flows around maritime constructions. For example, to allow motions between bodies inside the computational domain. Examples are a rudder-flap combination in which the flap moves independently of the rudder, or ships passing each other in confined waters. If the motions between the bodies become too large, the quality of deforming grids will be compromised and therefore overset grids are the more reliable alternative.</p>
+            <p>Interfaces are important as well in many simulations for maritime applications. A sliding interface can be used to simulate flows involving a rotating propeller aft of a ship. The propeller rotation is modelled by dividing the computational domain into two subdomains, one around the ship and one around the propeller, where the latter domain rotates, and the flow data is exchanged between the sub domains along a sliding interface.</p>
+            <p>Overset grids require an interpolation of the flow from one sub grid to the other and interfaces require an interpolation across interfaces. These interpolations use data from the previous iteration when variables are explicitly coupled, and data of the current iteration when variables are implicitly coupled.</p>
+            <p>In this presentation we discuss the effect of the type of coupling, explicit or implicit, on the iterative error.</p>				
+            </td>
+        </tr>
+
+        <tr>
+            <td class="date" rowspan="3">
+                14:45 am
+            </td>
+            <td class="title">
+					TBD
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://fmeulen.github.io/"> Bojana Rosic </a> (University of Twente)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+				TBD
+            </td>
+        </tr>
+
+    </table>
+    
+	<h4>Location </h4>
+	<iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.021460688447!2d4.863139612135302!3d52.33375677189624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a085c443af1%3A0x2df2d7a997eccd84!2sVrije%20Universiteit%20Amsterdam!5e0!3m2!1snl!2snl!4v1760013236344!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </body>
 </html>
