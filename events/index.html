@@ -45,6 +45,92 @@
         </tr>
     </table>
 
+    <!-- SAG-UQ second meeting, 2027 -->
+    <section id="second-sag-uq-meeting-2027">
+        <h2>Second SAG-UQ meeting &ndash; January 22, 2027</h2>
+        <p>The second edition of the SAG-UQ meeting will take place at the Department of Mathematics, VU Amsterdam.</p>
+        <ul>
+            <li>When? <b>Friday, January 22, 2027.</b></li>
+            <li>Where? <b>Maryam room, 9th floor of the NU building, VU Amsterdam, De Boelelaan 1111, Amsterdam.</b></li>
+            <li>Registration: <a href="https://forms.gle/uijzRutqnYk3WZpcA">Here</a></li>
+            <li>Registration deadline: <b>January 4, 2027.</b></li>
+        </ul>
+
+        <h4>Programme</h4>
+        <table class="plenary">
+        <tr><td class="date">13:00–13:10</td><td class="title">Welcome by the organizers</td></tr>
+        <tr><td class="date">13:10–13:50</td><td class="title"><a href="#sag-uq-2027-tristan">Tristan van Leeuwen</a></td></tr>
+        <tr><td class="date">13:50–14:30</td><td class="title"><a href="#sag-uq-2027-hanne">Hanne Kekkonen</a></td></tr>
+        <tr><td class="date">14:30–15:00</td><td class="title">Tea break</td></tr>
+        <tr><td class="date">15:00–15:40</td><td class="title"><a href="#sag-uq-2027-ben-hammouda">Chiheb Ben Hammouda</a></td></tr>
+        <tr><td class="date">15:40–16:20</td><td class="title"><a href="#sag-uq-2027-lotfi">Lotfi Massarweh</a></td></tr>
+        <tr><td class="date">16:20–16:50</td><td class="title">Tea break</td></tr>
+        <tr><td class="date">16:50–17:30</td><td class="title">Discussion</td></tr>
+        <tr><td class="date">17:30–18:30</td><td class="title">Drinks</td></tr>
+        </table>
+
+        <h4>Speakers and abstracts</h4>
+        <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">13:10</td>
+            <td class="title" id="sag-uq-2027-tristan">An Invertible Generative Model for Forward and Inverse Problems</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.cwi.nl/en/people/tristan-van-leeuwen/"> Tristan van Leeuwen (CWI) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Many inverse problems require both a forward simulator, which generates data for given parameters, and an inference procedure, which characterizes the parameters compatible with observed data. In a Bayesian formulation these tasks amount to sampling from the likelihood and the posterior, respectively. Both tasks can benefit from recent advances in generative models. Existing amortized approaches typically learn separate conditional generative models for the two directions, or focus primarily on the inverse direction. We introduce a single invertible generative map that performs both tasks. Starting from the classical use of triangular transport maps for conditional sampling, we combine a lowertriangular transport, adapted to the likelihood, with an upper-triangular transport, adapted to the posterior. The resulting bijection acts on the joint parameter–data space: evaluated forward, it generates samples from the likelihood for a prescribed parameter; evaluated in reverse, it generates posterior samples for prescribed data. We investigate the (non-)uniqueness of this construction, and propose a variational formulation that allows us to learn the map from samples. In linear Gaussian problems the construction is explicit and, unlike the individual triangular transports, can remain well conditioned as the observational noise vanishes. Nonlinear examples and an image-inpainting experiment illustrate simulation and uncertainty-aware inversion with the same model. The framework thus offers a unified route to amortized forward simulation and Bayesian inference, with potential extensions to experimental design.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">13:50</td>
+            <td class="title" id="sag-uq-2027-hanne">Sharper Regret Bounds for Time-Varying Gaussian Process Bandits with Constant Exploration</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-hn-hanne-kekkonen"> Hanne Kekkonen (Tu Delft) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Bayesian optimisation (BO) is a sequential method for optimising unknown functions when evaluations are expensive, with applications ranging from hyperparameter tuning to treatment selection in clinical trials. The BO algorithms balance between exploitation of regions that currently appear promising with exploration of regions where uncertainty remains high. Gaussian processes (GP) offer a natural model in this setting, since they provide posterior mean and uncertainty estimates in closed form.</p>
+                <p>We study Bayesian optimisation in a time-varying environment where the unknown reward function evolves according to a Gaussian process drift model. Existing analyses in this setting typically require the exploration parameter to grow to maintain uniform confidence bounds. We show that GP-UCB can instead be run with a constant exploration parameter and obtain an expected-regret bound whose coefficient depends on the drift rate.  We also derive a sharper time-varying maximum-informationgain bound. The same constant exploration analysis also yields realised-regret guarantees.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">15:00</td>
+            <td class="title" id="sag-uq-2027-ben-hammouda">What Must We Preserve? Model Reduction and Tensor Compression for Prediction and Inference</td>
+        </tr>
+        <tr>
+            <td class="speaker"> <a href="https://www.uu.nl/medewerkers/CBenHammouda"> Chiheb Ben Hammouda (Utrecht U) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>High dimensionality, rare events and partial observations make prediction and inference in stochastic dynamical systems computationally demanding. We examine what information model reduction must preserve using stochastic reaction networks, continuous-time Markov chains describing interacting species or agents in biochemical, epidemic, ecological and social systems.</p>
+                <p>Markovian projection (MP) constructs lower-dimensional dynamics preserving selected one-time marginal distributions. For rare-event estimation [1], minimizing importance-sampling variance leads to a stochastic optimal-control problem. MP reduces the dimension of its Hamilton–Jacobi–Bellman equation, yielding sampling rates for likelihood-weighted simulations of the full system. Analysis and numerical results demonstrate substantial variance reduction. Tensor trains [3] offer a complementary approach to the same problem: compressing the linear Kolmogorov backward solution defining optimal sampling rates while retaining all state coordinates. Exact proposal simulation and likelihood correction yield unbiased fixed-sample estimates, with variance bounded quadratically in the uniform backward approximation error. Numerical examples show variance reductions of several orders of magnitude.</p>
+                <p>When the objective shifts to estimating hidden states from partial observations [2], preserving unconditional marginals is insufficient. Filtered MP incorporates observation history into the projected rates, preserving selected filtering distributions. Sensitivity estimates quantify errors from rate approximation. Combining particle estimates of these rates with reduced filtering equations yields lower cost than full-state filtering and improved tail estimates over direct particle filtering in numerical experiments.</p>
+                <p>Parameter inference [4] adds a further computational challenge: the likelihood must be evaluated repeatedly as parameter values change within Markov chain Monte Carlo. We address this through parameter-dependent filtered projection; matching predictive distributions preserves the likelihood and enables its evaluation through reduced filtering equations.</p>
+                <p><b>References:</b></p>
+                <p>[1] C. Ben Hammouda, N. Ben Rached, R. Tempone and S. Wiechert. “Automated importance sampling via optimal control for stochastic reaction networks: A Markovian projection-based approach.” Journal of Computational and Applied Mathematics, 446, 115853, 2024. <a href="https://doi.org/10.1016/j.cam.2024.115853">https://doi.org/10.1016/j.cam.2024.115853</a></p>
+                <p>[2] C. Ben Hammouda, M. Chupin, S. Münker and R. Tempone. “Filtered Markovian projection: dimensionality reduction in filtering for stochastic reaction networks.” Statistics and Computing, 36, 189, 2026. <a href="https://doi.org/10.1007/s11222-026-10939-0">https://doi.org/10.1007/s11222-026-10939-0</a></p>
+                <p>[3] C. Ben Hammouda, M. Chupin and R. Tempone. “Tensor-train-based importance sampling for rare events in stochastic reaction networks.” In preparation.</p>
+                <p>[4] C. Ben Hammouda, M. Chupin, R. Tempone and D. J. Warne. “Filtered Markovian projection for efficient parameter inference.” In preparation.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">15:40</td>
+            <td class="title" id="sag-uq-2027-lotfi">A Unified Framework for Joint Parameter Estimation &amp; Hypothesis Testing in Linear Models</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.tudelft.nl/staff/l.massarweh/"> Lotfi Massarweh (TU Delft) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Parameter estimation and hypothesis testing are often treated as two separate tasks, although both rely on the same underlying observational model. This talk focuses on the Detection, Identification, Adaptation (DIA) method - see Teunissen (2018) - as a unified theoretical framework for their joint treatment in linear models. Starting from a linear Gaussian model, we introduce alternative hypotheses representing model misspecifications and show how estimation and testing can be formulated within a common geometric and probabilistic structure. A particular attention is therefore given to three steps: detection, identification, and adaptation. In this way, we can show how testing decisions affect the parameter estimator, along with its underlying distribution. Ultimately, the DIA estimator framework provides a rigorous basis for assessing uncertainty when both parameter estimation and model validity are considered.</p>
+            </td>
+        </tr>
+        </table>
+    </section>
+
     <h2> Online discussion groups </h2>
     <p> In Autumn 2026, several online discussion groups on different themes will take place, with the goal of identifying common research interests towards joint funding applications. </p>
 

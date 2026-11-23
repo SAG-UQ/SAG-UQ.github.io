@@ -19,7 +19,7 @@
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Banner">
+        <img src="assets/banner.png" alt="Banner">
         <div class="top-left">
             <span class="title2">Special Activity Group on Uncertainty Quantification </span> 
         </div>
@@ -30,8 +30,14 @@
             <td class="navigation">
                 <a title="Home Page" href=".">Home</a>
             </td>
+	    <td class="navigation">
+                <a title="People" href="people">People</a>
+            </td>
             <td class="navigation">
-                <a class="current" title="Events" href="events">Events</a>
+                <a class="current" title="Events" href="events">SAG Activities</a>
+            </td>
+	    <td class="navigation">
+                <a class="News" title="News" href="news">News</a>
             </td>
             <td class="navigation">
                 <a title="contact" href="contact">Contact</a> 
@@ -39,26 +45,275 @@
         </tr>
     </table>
 
+    <!-- SAG-UQ second meeting, 2027 -->
+    <section id="second-sag-uq-meeting-2027">
+        <h2>Second SAG-UQ meeting &ndash; January 22, 2027</h2>
+        <p>The second edition of the SAG-UQ meeting will take place at the Department of Mathematics, VU Amsterdam.</p>
+        <ul>
+            <li>When? <b>Friday, January 22, 2027.</b></li>
+            <li>Where? <b>Maryam room, 9th floor of the NU building, VU Amsterdam, De Boelelaan 1111, Amsterdam.</b></li>
+            <li>Registration: <a href="https://forms.gle/uijzRutqnYk3WZpcA">Here</a></li>
+            <li>Registration deadline: <b>January 4, 2027.</b></li>
+        </ul>
+
+        <h4>Programme</h4>
+        <table class="plenary">
+        <tr><td class="date">13:00–13:10</td><td class="title">Welcome by the organizers</td></tr>
+        <tr><td class="date">13:10–13:50</td><td class="title"><a href="#sag-uq-2027-tristan">Tristan van Leeuwen</a></td></tr>
+        <tr><td class="date">13:50–14:30</td><td class="title"><a href="#sag-uq-2027-hanne">Hanne Kekkonen</a></td></tr>
+        <tr><td class="date">14:30–15:00</td><td class="title">Tea break</td></tr>
+        <tr><td class="date">15:00–15:40</td><td class="title"><a href="#sag-uq-2027-ben-hammouda">Chiheb Ben Hammouda</a></td></tr>
+        <tr><td class="date">15:40–16:20</td><td class="title"><a href="#sag-uq-2027-lotfi">Lotfi Massarweh</a></td></tr>
+        <tr><td class="date">16:20–16:50</td><td class="title">Tea break</td></tr>
+        <tr><td class="date">16:50–17:30</td><td class="title">Discussion</td></tr>
+        <tr><td class="date">17:30–18:30</td><td class="title">Drinks</td></tr>
+        </table>
+
+        <h4>Speakers and abstracts</h4>
+        <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">13:10</td>
+            <td class="title" id="sag-uq-2027-tristan">An Invertible Generative Model for Forward and Inverse Problems</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.cwi.nl/en/people/tristan-van-leeuwen/"> Tristan van Leeuwen (CWI) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Many inverse problems require both a forward simulator, which generates data for given parameters, and an inference procedure, which characterizes the parameters compatible with observed data. In a Bayesian formulation these tasks amount to sampling from the likelihood and the posterior, respectively. Both tasks can benefit from recent advances in generative models. Existing amortized approaches typically learn separate conditional generative models for the two directions, or focus primarily on the inverse direction. We introduce a single invertible generative map that performs both tasks. Starting from the classical use of triangular transport maps for conditional sampling, we combine a lowertriangular transport, adapted to the likelihood, with an upper-triangular transport, adapted to the posterior. The resulting bijection acts on the joint parameter–data space: evaluated forward, it generates samples from the likelihood for a prescribed parameter; evaluated in reverse, it generates posterior samples for prescribed data. We investigate the (non-)uniqueness of this construction, and propose a variational formulation that allows us to learn the map from samples. In linear Gaussian problems the construction is explicit and, unlike the individual triangular transports, can remain well conditioned as the observational noise vanishes. Nonlinear examples and an image-inpainting experiment illustrate simulation and uncertainty-aware inversion with the same model. The framework thus offers a unified route to amortized forward simulation and Bayesian inference, with potential extensions to experimental design.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">13:50</td>
+            <td class="title" id="sag-uq-2027-hanne">Sharper Regret Bounds for Time-Varying Gaussian Process Bandits with Constant Exploration</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-hn-hanne-kekkonen"> Hanne Kekkonen (Tu Delft) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Bayesian optimisation (BO) is a sequential method for optimising unknown functions when evaluations are expensive, with applications ranging from hyperparameter tuning to treatment selection in clinical trials. The BO algorithms balance between exploitation of regions that currently appear promising with exploration of regions where uncertainty remains high. Gaussian processes (GP) offer a natural model in this setting, since they provide posterior mean and uncertainty estimates in closed form.</p>
+                <p>We study Bayesian optimisation in a time-varying environment where the unknown reward function evolves according to a Gaussian process drift model. Existing analyses in this setting typically require the exploration parameter to grow to maintain uniform confidence bounds. We show that GP-UCB can instead be run with a constant exploration parameter and obtain an expected-regret bound whose coefficient depends on the drift rate.  We also derive a sharper time-varying maximum-informationgain bound. The same constant exploration analysis also yields realised-regret guarantees.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">15:00</td>
+            <td class="title" id="sag-uq-2027-ben-hammouda">What Must We Preserve? Model Reduction and Tensor Compression for Prediction and Inference</td>
+        </tr>
+        <tr>
+            <td class="speaker"> <a href="https://www.uu.nl/medewerkers/CBenHammouda"> Chiheb Ben Hammouda (Utrecht U) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>High dimensionality, rare events and partial observations make prediction and inference in stochastic dynamical systems computationally demanding. We examine what information model reduction must preserve using stochastic reaction networks, continuous-time Markov chains describing interacting species or agents in biochemical, epidemic, ecological and social systems.</p>
+                <p>Markovian projection (MP) constructs lower-dimensional dynamics preserving selected one-time marginal distributions. For rare-event estimation [1], minimizing importance-sampling variance leads to a stochastic optimal-control problem. MP reduces the dimension of its Hamilton–Jacobi–Bellman equation, yielding sampling rates for likelihood-weighted simulations of the full system. Analysis and numerical results demonstrate substantial variance reduction. Tensor trains [3] offer a complementary approach to the same problem: compressing the linear Kolmogorov backward solution defining optimal sampling rates while retaining all state coordinates. Exact proposal simulation and likelihood correction yield unbiased fixed-sample estimates, with variance bounded quadratically in the uniform backward approximation error. Numerical examples show variance reductions of several orders of magnitude.</p>
+                <p>When the objective shifts to estimating hidden states from partial observations [2], preserving unconditional marginals is insufficient. Filtered MP incorporates observation history into the projected rates, preserving selected filtering distributions. Sensitivity estimates quantify errors from rate approximation. Combining particle estimates of these rates with reduced filtering equations yields lower cost than full-state filtering and improved tail estimates over direct particle filtering in numerical experiments.</p>
+                <p>Parameter inference [4] adds a further computational challenge: the likelihood must be evaluated repeatedly as parameter values change within Markov chain Monte Carlo. We address this through parameter-dependent filtered projection; matching predictive distributions preserves the likelihood and enables its evaluation through reduced filtering equations.</p>
+                <p><b>References:</b></p>
+                <p>[1] C. Ben Hammouda, N. Ben Rached, R. Tempone and S. Wiechert. “Automated importance sampling via optimal control for stochastic reaction networks: A Markovian projection-based approach.” Journal of Computational and Applied Mathematics, 446, 115853, 2024. <a href="https://doi.org/10.1016/j.cam.2024.115853">https://doi.org/10.1016/j.cam.2024.115853</a></p>
+                <p>[2] C. Ben Hammouda, M. Chupin, S. Münker and R. Tempone. “Filtered Markovian projection: dimensionality reduction in filtering for stochastic reaction networks.” Statistics and Computing, 36, 189, 2026. <a href="https://doi.org/10.1007/s11222-026-10939-0">https://doi.org/10.1007/s11222-026-10939-0</a></p>
+                <p>[3] C. Ben Hammouda, M. Chupin and R. Tempone. “Tensor-train-based importance sampling for rare events in stochastic reaction networks.” In preparation.</p>
+                <p>[4] C. Ben Hammouda, M. Chupin, R. Tempone and D. J. Warne. “Filtered Markovian projection for efficient parameter inference.” In preparation.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="date" rowspan="3">15:40</td>
+            <td class="title" id="sag-uq-2027-lotfi">A Unified Framework for Joint Parameter Estimation &amp; Hypothesis Testing in Linear Models</td>
+        </tr>
+        <tr>
+            <td class="speaker"><a href="https://www.tudelft.nl/staff/l.massarweh/"> Lotfi Massarweh (TU Delft) </a></td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <p>Parameter estimation and hypothesis testing are often treated as two separate tasks, although both rely on the same underlying observational model. This talk focuses on the Detection, Identification, Adaptation (DIA) method - see Teunissen (2018) - as a unified theoretical framework for their joint treatment in linear models. Starting from a linear Gaussian model, we introduce alternative hypotheses representing model misspecifications and show how estimation and testing can be formulated within a common geometric and probabilistic structure. A particular attention is therefore given to three steps: detection, identification, and adaptation. In this way, we can show how testing decisions affect the parameter estimator, along with its underlying distribution. Ultimately, the DIA estimator framework provides a rigorous basis for assessing uncertainty when both parameter estimation and model validity are considered.</p>
+            </td>
+        </tr>
+        </table>
+    </section>
+
+    <h2> Online discussion groups </h2>
+    <p> In Autumn 2026, several online discussion groups on different themes will take place, with the goal of identifying common research interests towards joint funding applications. </p>
+
+    <p> The groups and their coordinators are: </p>
+    <ul>
+	<li> <b> Uncertainty quantification and machine learning</b>. Coordinators: Sofia Imperatore (s.imperatore AT tue.nl), Dimitris Loukrezis (d.loukrezis AT cwi.nl) </li>
+    <li> <b> Uncertainty quantification in computational fluid dynamics</b>. Coordinators: Wouter Edeling (Wouter.Edeling AT cwi.nl), Svetlana Dubinkina (s.b.dubinkina AT vu.nl) </li>
+	<li> <b> Uncertainty quantification in solid mechanics</b>. Coordinators: Hugo Verhelst (h.m.verhelst AT tue.nl), Bojana Rosic (bojana.rosic AT tuwien.ac.at)</li>
+	<li> <b> Shape optimization under uncertainty</b>. Coordinators: Lisa Kusch (l.kusch AT tue.nl), Hugo Verhelst (h.m.verhelst AT tue.nl) </li>
+    <li> <b> Observation theory and geoscience applications</b>. Coordinators: Lotfi Massarweh (L.massarweh AT tudelft.nl), Laura Scarabosio (laura.scarabosio AT ru.nl) </li>
+    </ul>
+    <p> If you are interested in joining one or more discussion groups, please do not hesitate to get in touch with the group coordinators.</p>
+
 	<h2> Kickoff event </h2>
 	<p>We are excited to announce the kickoff event of our SAG-UQ.</p>
 
 	<ul>
-	<li> When? Monday, January 26, 2026.</li>
-	<li> Where? VU Amsterdam.</li>
-	<li> Registration? TBD</li>
+	<li> When? <b> Monday, January 26, 2026. </b></li>
+	<li> Where? <b> VU Amsterdam, De Boelelaan 1111. Room: NU-09A46 "Maryam Mirzakhani". </b></li>
 	<li> Including kickoff dinner: 75 euros (lunch and coffee breaks included)</li>
 	<li> Without kickoff dinner: 25 euros (lunch and coffee breaks included)</li>
+	<li> <a href="http://www.formdesk.nl/vu-onlinepayment/Beta_Registration_1st_Dutch_UQ_meeting">Link to registration form</a></li>
 	<li> Registration deadline: January 4th, 2026</li>
 	</ul>
 
-	<h3>Keynote speakers</h3>
+    <h4> Program </h4>   
+    <img src="assets/KO_schedule.png" alt="kickoff event schedule">
 
+	<h4>Keynote speakers and abstracts</h4>
+
+	<!--
 	<ul>
 	<li> Lorenzo Tamellini (CNR-IMATI Pavia, head of GAMM activity group on Uncertainty Quantification) </li>
-	<li> Auke van der Ploeg (MARIN (CFD))</li>
+	<li> Auke van der Ploeg (MARIN (CFD)</li>
 	<li> Bojana Rosic (University of Twente)</li>
-	<li> TBC</li> 
+	<li> Frank van der Meulen (VU Amsterdam)</li> 
 	</ul>
+	</p>
+	-->
+
+    <table class="plenary">
+ 
+
+        <tr>
+            <td class="date" rowspan="3">
+                10:00
+            </td>
+            <td class="title">
+					Dealing with noisy evaluations and gradient-enrichment in collocation methods for surrogate modeling of parametric PDEs
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://sites.google.com/view/lorenzo-tamellini/home-page"> Lorenzo Tamellini </a> (CNR-IMATI Pavia), head of <a href="https://gamm-ag-uq.github.io/">GAMM activity group on Uncertainty Quantification </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+            <p>
+				In this talk I will present two recent works aimed at
+				enhancing/robustifying the construction of surrogate models for
+				parametric PDEs with single/multi-fidelity collocation methods, namely
+				Sparse Grids Stochastic Collocation and Multi-Index Stochastic
+				Collocation methods (SGSC / MISC, respectively).</p>
+
+				<p>The first work concerns robustyfing the surrogate model construction
+				with respect to the presence of noise in PDE solvers. In practical
+				scenarios, in addition to "standard" discretization errors, the PDE
+				approximations are often corrupted by e.g. iterative method tolerances,
+				pre-asymptotic meshes, etc. The intensity of this corruption might be
+				different in different regiones of the parameter domain and hard to
+				estimate and control a priori (i.e., akin to a "noise", even though not
+				aleatoric in nature): SGSC and MISC will end up interpolating such
+				noise, resulting in a spoiled approximation of the response surface
+				(loss of monotonicity, spurious high-frequency oscillations),
+				compromising any subsequent analysis (optimization, real-time query,
+				uncertainty quantification). We propose a strategy to detect and prevent
+				such spoiling, based on inspecting the spectral content of the response
+				surface approximation: once the decay of the spectral coefficients
+				stagnates due to noisy evaluations, the construction will either stop
+				(in the single-fidelity scenario) or exclude the corrupted fidelities
+				from that iteration on (in a multi-fidelity scenario).</p>
+
+				<p>The second work discusses how to incorporate evaluations of gradients of
+				the response function in the construction of SGSC surrogate models. This
+				poses several challenges from a theoretical standpoint, such that
+				eventually it is easier to resort to a least-squares approach where both
+				the samples of the parameter domain and the polynomial space are
+				dictated by a sparse grid construction.
+				We will in particular elaborate on the fact that gradient-enhancement
+				turns out to be not always a convenient operation, depending on a) the
+				relative cost between evaluating the response function and its gradient
+				and b) the expected accuracy of these evaluations.</p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="date" rowspan="3">
+                11:15
+            </td>
+            <td class="title">
+					From statistics to data assimilation: bridging guiding and nudging
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://fmeulen.github.io/"> Frank van der Meulen </a> (VU Amsterdam)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+				Ordinary and partial differential equations underpin many physical, chemical, biological, and climate models. In practice, these systems are observed only partially and at discrete time points, making it necessary to reconstruct the full state over time-a task known as filtering (for real-time estimation) and smoothing (for retrospective estimation). In this talk I will highlight the parallel development of similar ideas-often called "guiding" in statistics and "nudging" in data assimilation- across the statistics and data-assimilation communities, despite limited cross-communication.  I will also illustrate guiding applied to neural field models and outline several open challenges that merit further research.
+            </td>
+        </tr>
+
+        <tr>
+            <td class="date" rowspan="3">
+                14:00
+            </td>
+            <td class="title">
+					Numerical uncertainty in CFD simulations involving overset grids or interfaces for maritime applications
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://www.marin.nl/en/experts/auke-van-der-ploeg"> Auke van der Ploeg </a> (MARIN (CFD)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+            <p>This presentation focuses on numerical uncertainty caused by mesh dependence and iterative errors in Computational Fluid Dynamics (CFD) simulations that use overset grids or interfaces for maritime applications.</p>
+            <p>Overset grids allow strong flexibility when computing flows around maritime constructions. For example, to allow motions between bodies inside the computational domain. Examples are a rudder-flap combination in which the flap moves independently of the rudder, or ships passing each other in confined waters. If the motions between the bodies become too large, the quality of deforming grids will be compromised and therefore overset grids are the more reliable alternative.</p>
+            <p>Interfaces are important as well in many simulations for maritime applications. A sliding interface can be used to simulate flows involving a rotating propeller aft of a ship. The propeller rotation is modelled by dividing the computational domain into two subdomains, one around the ship and one around the propeller, where the latter domain rotates, and the flow data is exchanged between the sub domains along a sliding interface.</p>
+            <p>Overset grids require an interpolation of the flow from one sub grid to the other and interfaces require an interpolation across interfaces. These interpolations use data from the previous iteration when variables are explicitly coupled, and data of the current iteration when variables are implicitly coupled.</p>
+            <p>In this presentation we discuss the effect of the type of coupling, explicit or implicit, on the iterative error.</p>				
+            </td>
+        </tr>
+
+        <tr>
+            <td class="date" rowspan="3">
+                14:45 am
+            </td>
+            <td class="title">
+					  Uncertainty quantification in reinforcement learning
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+				<a href="https://scholar.google.com/citations?user=58qcInYAAAAJ&hl=en"> Bojana Rosic </a> (University of Twente)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+				<p>Reinforcement learning (RL) is a branch of machine learning that is
+				often applied to optimal control and design problems. In RL, an agent
+				learns to make decisions by interacting with an environment. The agent
+				takes actions, receives rewards or penalties, and uses this feedback to
+				improve its behavior over time.</p>
+
+  				<p>The goal of RL is to optimize the agent’s behavior, or policy. Unlike
+				traditional optimization methods that minimize or maximize a static
+				objective function, RL deals with sequential decision-making under
+				uncertainty. The agent interacts with a stochastic environment modeled
+				as a Markov Decision Process (MDP), where state transitions and rewards
+				are governed by probability distributions. The objective is to learn a
+				policy—a probabilistic mapping from states to actions—that maximizes
+				the expected cumulative reward, or expected return, over time.</p>
+
+  				<p>This probabilistic formulation links RL closely to the framework of
+				inverse problems, which will be addressed in this talk. We reformulate
+				the stochastic dynamic programming problem with an unknown model as an
+				inverse problem, in which the value of each state is estimated from
+				data. We then demonstrate that several classical methods can be
+				interpreted as special cases of Bayes’ rule.</p>
+
+            </td>
+        </tr>
+
+    </table>
+    
+	<h4>Location </h4>
+	<iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.021460688447!2d4.863139612135302!3d52.33375677189624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a085c443af1%3A0x2df2d7a997eccd84!2sVrije%20Universiteit%20Amsterdam!5e0!3m2!1snl!2snl!4v1760013236344!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </body>
 </html>

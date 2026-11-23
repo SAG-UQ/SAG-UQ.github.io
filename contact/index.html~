@@ -19,7 +19,7 @@
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Banner">
+        <img src="assets/banner.png" alt="Banner">
         <div class="top-left">
             <span class="title2">Special Activity Group on Uncertainty Quantification </span> 
         </div>
@@ -30,8 +30,14 @@
             <td class="navigation">
                 <a title="Home Page" href=".">Home</a>
             </td>
+	    <td class="navigation">
+                <a title="People" href="people">People</a>
+            </td>
             <td class="navigation">
-                <a title="Events" href="events">Events</a>
+                <a title="Events" href="events">SAG Activities</a>
+            </td>
+	    <td class="navigation">
+                <a class="News" title="News" href="news">News</a>
             </td>
             <td class="navigation">
                 <a class="current" title="contact" href="contact">Contact</a> 
@@ -41,7 +47,7 @@
     
    <h2> Want to know more? </h2>
   
-	Would you like to know more about our SAG-UQ? Please feel free to contact us via TBD    
+	Would you like to know more about our SAG-UQ? Please feel free to contact us at sag-uq@cwi.nl.   
     
 </body>
 </html>

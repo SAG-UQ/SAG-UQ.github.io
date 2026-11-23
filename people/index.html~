@@ -19,7 +19,7 @@
 <body>
 
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Banner">
+        <img src="assets/banner.png" alt="Banner">
         <div class="top-left">
             <span class="title2">Special Activity Group on Uncertainty Quantification </span> 
         </div>
@@ -30,8 +30,14 @@
             <td class="navigation">
                 <a title="Home Page" href=".">Home</a>
             </td>
+	   <td class="navigation">
+                <a class="current" title="People" href="people">People</a>
+            </td>
             <td class="navigation">
-                <a class="current" title="Events" href="events">Events</a>
+                <a title="Events" href="events">SAG activities</a>
+            </td>
+	    <td class="navigation">
+                <a class="News" title="News" href="news">News</a>
             </td>
             <td class="navigation">
                 <a title="contact" href="contact">Contact</a> 
@@ -39,26 +45,33 @@
         </tr>
     </table>
 
-	<h2> Kickoff event </h2>
-	<p>We are excited to announce the kickoff event of our SAG-UQ.</p>
+	<h2> Current members </h2>
 
-	<ul>
-	<li> When? Monday, January 26, 2026.</li>
-	<li> Where? VU Amsterdam.</li>
-	<li> Registration? TBD</li>
-	<li> Including kickoff dinner: 75 euros (lunch and coffee breaks included)</li>
-	<li> Without kickoff dinner: 25 euros (lunch and coffee breaks included)</li>
-	<li> Registration deadline: January 4th, 2026</li>
-	</ul>
-
-	<h3>Keynote speakers</h3>
-
-	<ul>
-	<li> Lorenzo Tamellini (CNR-IMATI Pavia, head of GAMM activity group on Uncertainty Quantification) </li>
-	<li> Auke van der Ploeg (MARIN (CFD))</li>
-	<li> Bojana Rosic (University of Twente)</li>
-	<li> TBC</li> 
-	</ul>
-
+	Daniele Avitabile, Vrije Universiteit Amsterdam<br>
+	Rafael Bailo, TU Eindhoven<br>
+	Chiheb Ben Hammouda, University of Utrecht<br>
+	Daan Crommelin, CWI<br>
+	Svetlana Dubinkina, Vrije Universiteit Amsterdam<br>
+	Richard Dwight, TU Delft<br>
+	Wouter Edeling, CWI<br>
+	Jason Frank, University of Utrecht<br>
+	Bernard Geurts, University of Twente<br>
+	Hanne Kekkonen, TU Delft<br>
+	Lisa Kusch, TU Eindhoven<br>
+	Gabriel Lord, Radboud University<br>
+	Dimitris Loukrezis, CWI<br>
+	Kerstin Lux-Gottschalk, TU Eindhoven<br>
+	Lotfi Massarweh, TU Delft<br>
+	Antonis Papapantoleon, TU Delft<br>
+	Max Ramgraber, TU Delft<br>
+	Bojana Rosic, University of Twente<br>
+	Benjamin Sanderse, CWI<br>
+	Laura Scarabosio, Radboud University<br>
+	Rob Stevenson, University of Amsterdam<br>
+	Oliver Tse, TU Eindhoven<br>
+	Tristan van Leeuwen, CWI<br>
+	Karen Veroy-Grepl, TU Eindhoven<br>
+	<br>
+	Are you interested in the SAG UQ activities and would like to be part of our community? Then <a href="../contact/index.html">contact us</a>!
 </body>
 </html>
